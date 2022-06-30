@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="index.css">
     
+
+</head>
+
+<body>
+
+    <section class="todo-app">
+        <header class="todo-header">
+            <h1>Todo List</h1>
+            <input id="newTodo" class="new-todo" placeholder="What needs to be done?" required="required">
+        </header>
+        <section class="todo-main">
+            <input type="checkbox" class="check-all" />
+            <!-- <label for="check-all">Mark all as complete</label> -->
+            <ul class="todo-list">
+                <!-- <li class="todo-item">
+          <input type="checkbox" class="todo-input-status">
+          <p class="todo-para">Learn Js</p>
+          <button class="btn-delete"></button>
+        </li> -->
+            </ul>
+        </section>
+        <footer class="footer">
+            <span class="count-todo"><strong></strong>
+                Item Left
+            </span>
+            <div class="filter-todo">
+                <button class="all-todo">All</button>
+                <button class="active-todo">Active</button>
+                <button class="completed-todo">Completed</button>
+            </div>
+        </footer>
+    </section>
+    <script src="todo.js"></script>
 </body>
+
 </html>
